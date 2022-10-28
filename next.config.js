@@ -11,6 +11,11 @@ const nextConfig = {
       'undefined', //because some images could be not set in contentful and would unnecessarily break the build
     ],
   },
+  experimental: {
+    outputStandalone: true,
+    scrollRestoration: true,
+  },
+  output: 'standalone',
 }
 
 module.exports = nextConfig
